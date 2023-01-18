@@ -1,0 +1,58 @@
+:root {
+  --selected: #d91667;
+  --hover: #1698d9;
+  --disabled: #b3b3b3;
+  --card-fill: #f2f2f2;
+}
+
+.ProductCard {
+  position: relative;
+  display: flex;
+  min-width: 320px;
+  min-height: 480px;
+  margin-top: 2.5rem;
+  margin-left: 4rem;
+  margin-right: 4rem;
+  color: blue;
+  cursor: pointer;
+}
+
+.cardBorder {
+  position: absolute;
+}
+
+.cardBorder #cardStroke {
+  fill: var(--hover);
+}
+
+.cardBorder path {
+  fill: var(--card-fill);
+}
+
+.selected #cardStroke {
+  fill: var(--selected);
+}
+
+.hover #cardStroke {
+  fill: var(--hover);
+}
+
+.disabled #cardStroke {
+  fill: var(--disabled);
+}
+
+/* .cardBorder .blue #cardStroke {
+  fill: #1698d9;
+} */
+
+/* .cardBorder path {
+  fill: red !important;
+  stroke: green !important;
+  fill-opacity: 1;
+}
+
+.test path {
+  stroke: red;
+  fill: green;
+  stroke-width: 10px;
+} */
