@@ -1,8 +1,28 @@
+@font-face {
+  font-family: 'ExoThin';
+  src: url('./asserts/fonts/Exo2.0-Thin.otf');
+}
+
+html {
+  font-size: 10px;
+}
+
 .App {
+  display: block;
+  min-height: 100vh;
+  background-image: url('./asserts/img/background.jpg');
+  font-family: 'ExoThin', sans-serif;
   text-align: center;
 }
 
-.App-logo {
+.title {
+  font-size: 3.6rem;
+  color: #ffffff;
+  margin: 0;
+  padding-top: 5.5rem;
+}
+
+/*.App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -37,3 +57,4 @@
     transform: translateY(0px);
   }
 }
+*/
