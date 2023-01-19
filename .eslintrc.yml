@@ -13,6 +13,7 @@ plugins:
   - react
   - functional
 rules:
+  react/prop-types: 0
   functional/functional-parameters: 0
   functional/no-expression-statement: 0
   react/function-component-definition: [2, { "namedComponents": "arrow-function" }]
