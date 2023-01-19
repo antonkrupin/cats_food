@@ -3,6 +3,13 @@
   --hover: #1698d9;
   --disabled: #b3b3b3;
   --card-fill: #f2f2f2;
+	--title-color: #000000;
+	--text-color: #666666;
+}
+
+@font-face {
+  font-family: 'TrebuchetMS';
+  src: url('../asserts/fonts/trebuchetms.ttf');
 }
 
 .ProductCard {
@@ -10,49 +17,129 @@
   display: flex;
   min-width: 320px;
   min-height: 480px;
-  margin-top: 2.5rem;
-  margin-left: 4rem;
-  margin-right: 4rem;
-  color: blue;
+	margin: 2.5rem 4rem 0 4rem;
+  color: var(--text-color);
   cursor: pointer;
+	overflow: hidden;
+	/* background-color: var(--card-fill); */
+  clip-path: polygon(0 100%, 0 9%, 13.3% 0, 100% 0, 100% 100%);
+	background-color: var(--card-fill);
+	border-radius: 12px;
+}
+
+.border {
+	position: absolute;
 }
 
 .cardBorder {
   position: absolute;
+	background-image: url('../asserts/img/cat.png');
+	background-size: 115%;
+	background-repeat: no-repeat;
+	background-position-x: -3rem;
+	background-position-y: 23rem;
+}
+
+.cardBorder {
+  fill: transparent;
+	
 }
 
 .cardBorder #cardStroke {
   fill: var(--hover);
-}
-
-.cardBorder path {
-  fill: var(--card-fill);
+	
 }
 
 .selected #cardStroke {
   fill: var(--selected);
+	stroke: var(--selected);
 }
 
 .hover #cardStroke {
   fill: var(--hover);
+	stroke: var(--hover);
 }
 
 .disabled #cardStroke {
   fill: var(--disabled);
+	stroke: var(--disabled);
 }
 
-/* .cardBorder .blue #cardStroke {
-  fill: #1698d9;
-} */
-
-/* .cardBorder path {
-  fill: red !important;
-  stroke: green !important;
-  fill-opacity: 1;
+.ProductCard_text {
+	width: 100%;
+	font-family: 'TrebuchetMS', sans-serif;
+	text-align: left;
+	margin-left: 5rem;
+	
 }
 
-.test path {
-  stroke: red;
-  fill: green;
-  stroke-width: 10px;
-} */
+.ProductCard_text h1, .ProductCard_text h2 {
+	font-weight: bold;
+	color: var(--title-color);
+	margin: 0;
+}
+
+.ProductCard_text h1 {
+	font-size: 4.8rem;
+	padding-top: 1rem;
+}
+
+.ProductCard_text h2 {
+	font-size: 2.4rem;
+	padding-top: 0.5rem;
+}
+
+.ProductCard_text h3 {
+	font-size: 1.6rem;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 2.5rem;
+}
+
+.ProductCard_text h4 {
+	font-size: 1.4rem;
+	font-weight: normal;
+	margin: 0;
+	padding-top: 1.5rem;
+	line-height: 1.6rem;
+}
+
+.ProductCard_text img {
+	position: absolute;
+	width: 110%;
+	left: -5rem;
+	bottom: -6rem;
+	z-index: 2000000;
+}
+
+.price {
+	position: absolute;
+	width: 8rem;
+	height: 8rem;
+	border-radius: 100%;
+	background-color: var(--hover);
+	color: var(--card-fill);
+	bottom: 1.5rem;
+	right: 1.5rem;
+}
+
+.price div {
+	position: absolute;
+	top: 22.5%;
+	left: 37.5%;
+}
+
+.price h1, .price h2 {
+	font-family: 'TrebuchetMS', sans-serif;
+	font-weight: normal;
+	margin: 0;
+}
+
+.price h1 {
+	font-size: 4.2rem;
+	line-height: 3rem;
+}
+
+.price h2 {
+	font-size: 2.1rem;
+}
