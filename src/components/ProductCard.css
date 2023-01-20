@@ -12,6 +12,12 @@
   src: url('../asserts/fonts/trebuchetms.ttf');
 }
 
+.wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 .ProductCard {
   position: relative;
   display: flex;
@@ -157,4 +163,23 @@
 .price h2 {
 	font-size: 2.1rem;
 	line-height: 2.1rem;
+}
+
+.buyText {
+	max-width: 400px;
+	margin-top: 1.5rem;
+}
+
+.buyText h3 {
+	font-family: 'TrebuchetMS', sans-serif;
+	font-weight: normal;
+	font-size: 1.3rem;
+	color: #ffffff;
+	margin: 0;
+}
+
+.buyText textbox {
+	color: var(--hover);
+	border-bottom: 2px dashed var(--hover);
+	cursor: pointer;
 }
