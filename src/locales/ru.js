@@ -10,6 +10,10 @@ export default {
         gift: 1,
         weight: '0.5',
         unit: 'кг',
+        nonSelected: 'Чего сидишь? Порадуй котэ, ',
+        buyText: 'купи',
+        selected: 'Печень утки разварная с артишоками.',
+        disabled: 'Закончилось',
       },
       product2: {
         ingredient: 'с рыбой',
@@ -17,6 +21,10 @@ export default {
         gift: 2,
         weight: '2',
         unit: 'кг',
+        nonSelected: 'Чего сидишь? Порадуй котэ, ',
+        buyText: 'купи',
+        selected: 'Головы щучьи с чесноком да свежайшая сёмгушка.',
+        disabled: 'Закончилось',
       },
       product3: {
         ingredient: 'с курой',
@@ -24,6 +32,10 @@ export default {
         gift: 5,
         weight: '5',
         unit: 'кг',
+        nonSelected: 'Чего сидишь? Порадуй котэ, ',
+        buyText: 'купи',
+        selected: 'Филе из цыплят с трюфелями в бульоне.',
+        disabled: 'Закончилось',
       },
     },
     servings: {
